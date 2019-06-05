@@ -11,7 +11,7 @@ const { skills } = data;
 
 router.get('/', (req, res) => {
 	res.locals.data = projects;//set the locals data to the projects array
-	setTimeout(() => res.render('index'), 500);//render the index page//render the index page
+	res.render('index');//render the index page//render the index page
 });
 
 router.get('/project/:id', (req, res, next) => {
@@ -28,15 +28,15 @@ router.get('/project/:id', (req, res, next) => {
 	if (projectObject === null) {
 		const err = new Error('Page Not Found');
 		err.status = 404;
-		setTimeout(() => next(err), 500);//throw 404 error if nothing matches
+		next(err);//throw 404 error if nothing matches
 	} else {
 		res.locals.skills = skills;//pass the skills data
-		setTimeout(() => res.render('project', projectObject), 500);//render the projects page with the projectObject
+		res.render('project', projectObject);//render the projects page with the projectObject
 	}
 });
 
 router.get('/about', (req, res) => {
-	setTimeout(() => res.render('about'), 500);
+	res.render('about');
 });
 
 module.exports = router;//export the router const
