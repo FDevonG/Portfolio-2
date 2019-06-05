@@ -1,0 +1,38 @@
+/***************************************
+FOOTER
+***************************************/
+
+.content-footer {
+	margin-top: em(20px);
+	width: 100%;
+	@include border($width : 1px, $color : $primary-color, $side : top);
+	a {
+		display: block;
+	}
+}
+
+.footer-icons {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.footer-icon-list {
+	max-width: 100%;
+	@include grid($justCon : center);
+	grid-template-columns: repeat(4, minMax(25%, 1fr));
+	grid-column-gap: em(20px);
+	grid-auto-rows: auto;
+}
+
+.footer-icon {
+	border-radius: $br-round;
+	max-width: em(50px);
+}
+
+.footer-icon__background-fill {
+	fill: $primary-color;
+}
+
+.footer-icon__shape-fill {
+	fill: $white;
+}

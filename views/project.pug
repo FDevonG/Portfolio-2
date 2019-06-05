@@ -1,0 +1,31 @@
+extends baseLayout.pug
+
+block content
+	
+	.card
+		a(href="/").go-back &larr; Back
+	
+	section.card.project-first-block
+	
+		.project-intro
+			h3 #{project_name}
+			p #{description}
+		
+		.project-skills-buttons
+			ul.skills__list
+				each technology in technologies
+					each skill in skills
+						if technology === skill.skill
+							li.skills__list--item 
+								img.skill-icon(src=`${skill.image_svg}` alt=`${skill.skill}`)
+								span #{skill.skill}
+			div.buttons.center-text
+				a.button(href=`${github_link}` target="_blank") Github Repo
+				a.button(href=`${live_link}` target="_blank") Live Link
+			
+	section.card
+		each url in image_urls
+			img.project-img(src=`${url}`)
+	
+	.card
+		a(href="/").go-back &larr; Back

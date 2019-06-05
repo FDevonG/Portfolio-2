@@ -1,0 +1,58 @@
+/***************************************
+PROJECT-VIEW
+***************************************/
+
+.project-first-block {
+	@include mq(medium) {
+		@include flexy($dir : row); 
+	}
+}
+
+.project-intro,
+.project-skills-buttons {
+	margin: 0 2.5%;
+}
+
+.project-skills-buttons {
+	flex: 1 0 35%;
+}
+
+.project-intro {
+	flex: 1 0 55%
+}
+
+/*********
+SKILLS
+*********/
+
+.skill-icon {
+	max-width: em(30px);
+	max-height: em(30px);
+}
+
+.skills__list {
+	@include flexy($dir : row, $alignCon : center);
+	flex: 1 1 auto;
+	flex-wrap: wrap;
+	@include mq(medium) {
+//		@include flexy($dir : column);
+	}
+	@include m(item) {
+		@include flexy($dir : row);
+		margin: em(10px);
+		align-items: center;
+		span {
+			margin-left: em(10px);
+		}
+	}
+}
+
+.buttons {
+	
+}
+
+.project-img {
+	width: 100%;
+	margin: em(10px) 0;
+	@include border($width : em(2px), $color : $primary-color);
+}

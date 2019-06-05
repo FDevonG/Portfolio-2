@@ -1,0 +1,49 @@
+/***************************************
+VARIABLES
+***************************************/
+
+/**********
+FONT
+**********/
+
+$google--font-url : "https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap";
+$font-family      : 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans Serif';
+$base--font-size : 16px;
+
+$font-weight--light  : 300;
+$font-weight--normal : 400;
+$font-weight--bold   : 700;
+
+/**********
+COLOR
+**********/
+
+$wedgeWood    : #468592;
+$toryBlue     : #105a8c;
+$citrineWhite : #F8EFD2;
+
+$white               : $citrineWhite;
+$primary-color       : $wedgeWood;
+$secondary-color     : $toryBlue;
+$primary-color-rgba  : rgba(70, 133, 146, 0.8);
+
+/**********
+BORDER-RADIUS
+**********/
+
+$br       : 5px;
+$br-round : 50%;
+
+/**********
+TRANSITION
+**********/
+
+$default-transition : 0.5s;
+
+/**********
+MEDIA QUERIES
+**********/
+
+$mq-small : 320px;
+$mq-medium : 600px;
+$mq-large : 1000px;

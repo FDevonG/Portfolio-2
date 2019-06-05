@@ -1,0 +1,83 @@
+/***************************************
+TYPOGRAPHY
+***************************************/
+
+@if variable-exists (google--font-url) {
+	@import url($google--font-url);
+}
+
+#site-wrapper {
+	font-family: $font-family;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.logo {
+	@include e(text) {
+		color: $secondary-color;
+		h1 {
+			font-size: em(40px);
+			margin: 0;
+		}
+		h2 {
+			font-size: em(30px);
+			margin: 0;
+		}
+	}
+}
+
+.about-link {
+	color: $primary-color;
+}
+
+/*********
+Projects
+**********/
+
+.overLay {
+	text-align: center;
+	color: $white;
+	p {
+		margin: 0 em(20px);
+	}
+}
+
+.content-footer {
+	text-align: center;
+	span {
+		font-size: em(12px);
+	}
+}
+
+//the top container for each project
+.project-cell {
+	text-align: center;
+}
+
+.skills__list {
+	color : $primary-color;
+}
+
+/*********
+404 page
+**********/
+
+.error {
+	a {
+		color: $white;
+	}
+	span {
+		font-size: em(30px);
+	}
+}
+
+//the back links to go back to home page
+.go-back {
+	color: $primary-color;
+	font-weight: $font-weight--bold;
+	&:hover {
+		text-decoration: underline;
+	}
+}

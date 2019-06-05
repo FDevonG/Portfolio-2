@@ -1,0 +1,45 @@
+/***************************************
+LAYOUT
+***************************************/
+
+html,
+body {
+	height : 100%;
+}
+
+body {
+	opacity: 0;
+	transition: opacity $default-transition;
+}
+
+#site-wrapper {
+	min-height: 100%;
+	@include grid();
+	grid-template-areas: "intro"
+						 "content";
+	@include mq(large) {
+		grid-template-areas: "intro content";
+		grid-template-columns: 25% 75%;
+	}
+}
+
+.content-wrapper {
+	@include flexy($dir:column);
+	@include mq(large) {
+		margin-top: em(100px);
+	}
+}
+
+.content {
+	flex: 1 0 auto; 
+}
+
+.content-footer {
+	flex-shrink: 0;
+}
+
+.card {
+	width: 90%;
+	margin: em(20px) auto;
+}
+

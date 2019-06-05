@@ -1,0 +1,17 @@
+extends baseLayout.pug
+
+block content
+	
+	section.card.center-text
+		h3 Portfolio
+		p This website is showcaseing my skills and what I am capable of accomplishing.
+		
+	section.card.projects
+		each project in data
+			.project-cell
+				h4 #{project.project_name}
+				.overlay-container
+					a(href=`/project/${project.id}`)
+						img.thumbnail(src=`${project.main_image_url}`)
+						.overLay
+							p #{project.description}

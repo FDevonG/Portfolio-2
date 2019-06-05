@@ -1,0 +1,37 @@
+/***************************************
+ABOUT
+***************************************/
+
+.about-text {
+	text-indent: em(40px);
+	@include mq(medium) {
+		@include flexy($dir : row);
+		p {
+			flex: 1 0 45%;
+			margin: 0 2.5% em(30px);
+			
+		}
+	}
+}
+
+.animals {
+	@include mq(medium) {
+		@include flexy($dir : row);
+		flex-wrap: wrap;
+	}
+}
+
+.animal {
+	margin: em(20px) 0;
+	@include mq(medium) {
+		flex: 1 0 45%;
+		margin: em(20px) 2.5%;
+	}
+}
+
+.animal-pic {
+	width: 50%;
+	max-width: em(500px);
+	border-radius: $br-round;
+	@include border($width : em(3px), $color : $primary-color);
+}

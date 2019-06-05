@@ -1,0 +1,20 @@
+/***************************************
+PLACEHOLDERS
+***************************************/
+
+.button {
+	border-radius: $br;
+	color: $white;
+	margin: em(5px) 0;
+	padding: em(20px) 0;
+	background-color: $primary-color;
+	@include border($width : em(5px), $color : $white);
+	transition: border $default-transition, background-color $default-transition, color $default-transition;
+	display: block;
+	width: 100%;
+	&:hover {
+		@include border($width : em(5px), $color : $primary-color);
+		background-color: $white;
+		color: $primary-color;
+	}
+}

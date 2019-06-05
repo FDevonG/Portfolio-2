@@ -1,0 +1,42 @@
+/***************************************
+INTRO
+***************************************/
+
+.intro-block {
+	text-align: center;
+	margin: 0;
+	background-color: $white;
+}
+
+.logo {
+	margin: em(20px) auto 0;
+	width: 90%;
+	@include e(shape) {
+		fill: $primary-color;
+	}
+	@include e(letter) {
+		fill: $secondary-color;
+		stroke: $primary-color;
+		stroke-width: em(10px);
+	}
+	@include e(stroke) {
+		stroke: $primary-color;
+		stroke-width: em(2px);
+	}
+	@include e(text) {
+		margin: em(20px) 0 0;
+	}
+	svg {
+		width: 50%;
+		max-width: em(250px);
+	}
+}
+
+.about {
+	width: 90%;
+	margin: em(80px) auto 0;
+	a {
+		display: block;
+		margin: em(50px) auto;
+	}
+}

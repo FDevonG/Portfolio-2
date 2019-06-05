@@ -1,0 +1,148 @@
+{
+	"data" : {
+	
+	 	"title" : "Portfolio Projects",
+		"projects" : [
+			
+			{
+				"id" : "0",
+				"project_name" : "Whale Of A Time",
+				"description" : "Built for a local campground this website is meant to showcase the area and provide information. It showcases the cottages, campsites, and the beautiful surrounding area.",
+				"technologies" : [
+					"HTML",
+					"CSS",
+					"Sass",
+					"Javascript"
+				],
+				"live_link" : "http://whaleofatime.ca/",
+				"github_link" : "https://github.com/FDevonG/Whale-Of-A-Time",
+				"main_image_url" : "/static/images/websiteMainImages/whaleOfATimeMain.jpg",
+				"image_urls" : [
+					"/static/images/whaleofatime/pic-1.jpg",
+					"/static/images/whaleofatime/pic-2.jpg",
+					"/static/images/whaleofatime/pic-3.jpg"
+				]
+			},
+			
+			{
+				"id" : "1",
+				"project_name" : "Employee Directory",
+				"description" : "A database of employess with their information. It provides a search field at the top to quickly locate a employee.",
+				"technologies" : [
+					"HTML",
+					"CSS",
+					"Javascript"
+				],
+				"live_link" : "https://fdevong.github.io/Javascript-Techdegree-Project-5/",
+				"github_link" : "https://github.com/FDevonG/Javascript-Techdegree-Project-5",
+				"main_image_url" : "/static/images/websiteMainImages/directoryMain.jpg",
+				"image_urls" : [
+					"/static/images/directory/pic-1.jpg",
+					"/static/images/directory/pic-2.jpg",
+					"/static/images/directory/pic-3.jpg"
+				]
+			},
+	
+			{
+				"id" : "2",
+				"project_name" : "Web App",
+				"description" : "A web application. It uses graphs that dislay information, upon clicking buttons you can get the graphs to display diferent information. It also provides app preferences that save locally to your machine.",
+				"technologies" : [
+					"HTML",
+					"CSS",
+					"Javascript"
+				],
+				"live_link" : "https://fdevong.github.io/techdegree-project-7/",
+				"github_link" : "https://github.com/FDevonG/techdegree-project-7",
+				"main_image_url" : "/static/images/websiteMainImages/webAppMain.jpg",
+				"image_urls" : [
+					"/static/images/webapp/pic-1.jpg",
+					"/static/images/webapp/pic-2.jpg"
+				]
+			},
+
+			{
+				"id" : "3",
+				"project_name" : "Form Validation",
+				"description" : "Using form validation I have implemented functions to validate the form and provide errors for the needed corrections.",
+				"technologies" : [
+					"HTML",
+					"CSS",
+					"Javascript",
+					"Jquery"
+				],
+				"live_link" : "https://fdevong.github.io/JavaScript-Techdegree-Project-3/",
+				"github_link" : "https://github.com/FDevonG/JavaScript-Techdegree-Project-3",
+				"main_image_url" : "/static/images/websiteMainImages/formValidationMain.jpg",
+				"image_urls" : [
+					"/static/images/formvalidation/pic-1.jpg",
+					"/static/images/formvalidation/pic-2.jpg",
+					"/static/images/formvalidation/pic-3.jpg"
+				]
+			},
+			
+			{
+				"id" : "4",
+				"project_name" : "Lightbox",
+				"description" : "Useing a Jquery plugin I created a photo gallery with a search feature. Clicking a image will open a lightbox with more information about the picture.",
+				"technologies" : [
+					"HTML",
+					"CSS",
+					"Jquery"
+				],
+				"live_link" : "https://fdevong.github.io/techdegree-project-5/",
+				"github_link" : "https://github.com/FDevonG/techdegree-project-5",
+				"main_image_url" : "/static/images/websiteMainImages/lightboxMain.jpg",
+				"image_urls" : [
+					"/static/images/lightbox/pic-1.jpg",
+					"/static/images/lightbox/pic-2.jpg",
+					"/static/images/lightbox/pic-3.jpg"
+				]
+			},
+			
+			{
+				"id" : "5",
+				"project_name" : "Phrase Hunter",
+				"description" : "A simple game in which you must guess the phrase, however everytime you geuss a letter not in the phrase you lose a life, run out of lives and it's game over.",
+				"technologies" : [
+					"HTML",
+					"CSS",
+					"Javascript"
+				],
+				"live_link" : "https://FDevonG.github.io/Javascript-Techdegree-Project-4",
+				"github_link" : "https://github.com/FDevonG/Javascript-Techdegree-Project-4/tree/master",
+				"main_image_url" : "/static/images/websiteMainImages/phraseHunterMain.jpg",
+				"image_urls" : [
+					"/static/images/phrasehunter/pic-1.jpg",
+					"/static/images/phrasehunter/pic-2.jpg",
+					"/static/images/phrasehunter/pic-3.jpg"
+				]
+			}
+			
+		],
+		
+		"skills" : [
+			{
+				"skill" : "HTML",
+				"image_svg" : "/static/images/icons/html.svg"
+			},
+			{
+				"skill" : "CSS",
+				"image_svg" : "/static/images/icons/css.svg"
+			},
+			{
+				"skill" : "Sass",
+				"image_svg" : "/static/images/icons/sass.svg"
+			},
+			{
+				"skill" : "Javascript",
+				"image_svg" : "/static/images/icons/javascript.svg"
+			},
+			{
+				"skill" : "Jquery",
+				"image_svg" : "/static/images/icons/jquery.svg"
+			}
+		]
+	
+	}
+}
